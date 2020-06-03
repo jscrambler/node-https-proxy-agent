@@ -34,10 +34,14 @@ export default function parseProxyResponse(
 
 		function onclose(err?: Error) {
 			debug('onclose had error %o', err);
+			if(err) return reject(err);
+
+			return resolve();
 		}
 
 		function onend() {
 			debug('onend');
+			resolve();
 		}
 
 		function onerror(err: Error) {
