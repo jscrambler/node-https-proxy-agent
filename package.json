@@ -1,5 +1,5 @@
 {
-  "name": "https-proxy-agent",
+  "name": "@jscrambler/https-proxy-agent",
   "version": "5.0.0",
   "description": "An HTTP(s) proxy `http.Agent` implementation for HTTPS",
   "main": "dist/index",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/TooTallNate/node-https-proxy-agent.git"
+    "url": "git://github.com/jscrambler/node-https-proxy-agent.git"
   },
   "keywords": [
     "https",
@@ -26,8 +26,11 @@
   ],
   "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
-    "url": "https://github.com/TooTallNate/node-https-proxy-agent/issues"
+    "url": "https://github.com/jscrambler/node-https-proxy-agent/issues"
   },
   "dependencies": {
     "agent-base": "6",
